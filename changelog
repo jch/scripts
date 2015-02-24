@@ -14,7 +14,7 @@ set -e
 
 # parse args
 repo=$(git remote -v | grep push | awk '{print $2}' | cut -d'/' -f4- | sed 's/\.git//')
-base=$(git tag -l | sort -n | tail -n 1)
+base=$(git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n | tail -n 1)
 head="HEAD"
 api_url="https://api.github.com"
 
