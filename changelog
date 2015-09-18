@@ -8,6 +8,7 @@
 # Generate a changelog preview from pull requests merged between `base` and
 # `head`.
 #
+# https://github.com/jch/release-scripts/blob/master/changelog
 set -e
 
 [ $# -eq 0 ] && set -- --help
