@@ -39,9 +39,6 @@ base="${base:-$(git tag -l | sort -t. -k 1,1n -k 2,2n -k 3,3n | tail -n 1)}"
 head="${head:-HEAD}"
 api_url="https://api.github.com"
 
-echo "# $repo $base..$head"
-echo
-
 # get merged PR's. Better way is to query the API for these, but this is easier
 for pr in $(git log --oneline $base..$head | grep "Merge pull request" | awk '{gsub("#",""); print $5}')
 do
