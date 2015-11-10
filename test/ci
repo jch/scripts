@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+set -x
+
+cat test/remove_assert_nothing_raised_original.rb | ruby -p remove_assert_nothing_raised.rb | diff -u test/remove_assert_nothing_raised_expected.rb -

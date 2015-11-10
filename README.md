@@ -1,4 +1,6 @@
-# release-scripts
+# scripts
+
+## Release scripts
 
 Collection of scripts for managing open source projects.
 
@@ -6,7 +8,6 @@ Collection of scripts for managing open source projects.
 - **release** Push a gem to rubygems.org. Depends on `package`
 - **changelog** Generate a changelog from merge pull requests since the last tag using the [GitHub API](https://developer.github.com)
 
-## Authors
+## Text utilities
 
-- [Wynn Netherland](https://github.com/pengwynn)
-- [Jerry Cheung](https://github.com/jch)
+- **remove_assert_nothing_raised.rb** minitest dropped this, this script removes it
