@@ -1,4 +1,4 @@
-# scripts
+# scripts ![](https://travis-ci.org/jch/scripts.svg)
 
 ## Release scripts
 
